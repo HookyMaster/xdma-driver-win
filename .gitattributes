@@ -1,0 +1,7 @@
+# 全部按原样字节存储：驱动包是签名过的，任何行尾转换都会破坏 .cat 里的文件哈希
+* -text
+
+# 显式标记二进制，避免 diff / merge 误处理
+*.sys binary
+*.cat binary
+*.cer binary
